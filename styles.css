@@ -1,0 +1,450 @@
+@font-face {
+	font-family: "Billabong";
+	src: url("assets/billabong.ttf") format("truetype");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: "poppins";
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fafafa;
+}
+
+nav .container {
+	display: flex;
+	height: 54px;
+	max-width: 975px;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 20px;
+}
+
+.container_nav {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	height: 54px;
+	z-index: 1;
+	border-bottom: 1px solid #dbdbdb;
+	background-color: white;
+}
+
+a {
+	color: #231f20;
+	font-size: 35px;
+	font-family: "Billabong";
+	font-weight: 500;
+}
+
+.btn-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 15px;
+}
+
+.btn {
+	cursor: pointer;
+	font-size: 14px;
+	line-height: 18px;
+	border: 1px solid transparent;
+	background-color: #0095f6;
+	color: white;
+	border-radius: 4px;
+	padding: 5px 9px;
+}
+
+.nobtn {
+	margin-left: 15px;
+	cursor: pointer;
+	color: #0095f6;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+input {
+	height: 28px;
+	border: 1px solid #dbdbdb;
+	font-size: 14px;
+	min-width: 125px;
+	width: 215px;
+	background-color: #fafafa;
+	display: inline-block;
+}
+
+input::placeholder {
+	color: #8f8f8f;
+	font-size: 13px;
+}
+
+input:focus {
+	text-align: left;
+	font-size: 11px;
+	border: 1px solid #dbdbdb;
+	outline: 0;
+}
+
+.search {
+	text-align: center;
+}
+
+.small-container {
+	display: flex;
+	justify-content: center;
+	max-width: 975px;
+	margin: 0 auto;
+	flex-direction: column;
+	padding: 70px 5px 0;
+}
+
+.image-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 975px;
+}
+
+.dog-container {
+	display: none;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 975px;
+}
+
+.visible {
+	display: flex;
+}
+
+.hidden {
+	display: none;
+}
+
+.cat {
+	width: 293px;
+	height: 293px;
+	overflow: hidden;
+	flex-shrink: 0;
+	margin: 0px 28px 28px 0px;
+}
+
+.dog {
+	width: 293px;
+	height: 293px;
+	overflow: hidden;
+	flex-shrink: 0;
+	margin: 0px 28px 28px 0px;
+}
+
+.cat img {
+	width: 100%;
+	height: 100%;
+}
+
+.dog img {
+	width: 100%;
+	height: 100%;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+}
+
+.pp {
+	margin-right: 100px;
+}
+
+.pp img {
+	height: 160px;
+	width: 160px;
+	margin-left: 70px;
+	padding: 5px;
+	border-radius: 50%;
+}
+
+.infos {
+	display: flex;
+	flex-direction: column;
+}
+
+.responsive_name {
+	display: none;
+}
+
+.name {
+	display: flex;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+.name h1 {
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.name .btn {
+	margin-left: 20px;
+	cursor: pointer;
+	font-size: 14px;
+	border: 1px solid transparent;
+	background-color: #0095f6;
+	color: white;
+	border-radius: 4px;
+	padding: 5px 24px;
+}
+
+.responsive_stats {
+	display: none;
+}
+
+.stats {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.stats li {
+	margin-right: 40px;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+.responsive_métier {
+	display: none;
+}
+
+.métier {
+	font-size: 14px;
+	color: #898989;
+}
+
+.responsive_bio {
+	display: none;
+}
+
+.bio {
+	font-size: 14px;
+}
+
+.suggestions {
+	display: flex;
+	margin-bottom: 44px;
+}
+
+.chats {
+	display: flex;
+}
+
+.chats li {
+	display: flex;
+	flex-direction: column;
+	margin-left: 50px;
+	font-size: 14px;
+}
+
+.suggestions img {
+	height: 77px;
+	width: 77px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+
+.container_onglet {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid #dbdbdb;
+	height: 53px;
+}
+
+.onglets {
+	display: flex;
+	height: 52px;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+	letter-spacing: 1px;
+	cursor: pointer;
+	color: #898989;
+}
+
+.container_onglet i {
+	margin-right: 5px;
+}
+
+.fa-id-card-alt {
+	margin-bottom: 3px;
+}
+
+/* ONGLETS */
+
+.active {
+	border-top: 1px solid black;
+	animation: fade 0.5s forwards;
+	color: black;
+}
+
+/* RESPONSIVE*/
+
+@media screen and (min-width: 736px) {
+	header {
+		margin-bottom: 44px;
+	}
+
+	.onglets:nth-child(1) {
+		margin-right: 52px;
+	}
+}
+
+@media screen and (max-width: 989px) {
+	.cat {
+		width: 28%;
+		height: auto;
+		margin: 6px 14px 15px 14px;
+	}
+
+	.dog {
+		width: 28%;
+		height: auto;
+		margin: 6px 14px 15px 14px;
+	}
+}
+
+@media screen and (max-width: 735px) {
+	header {
+		flex-direction: row;
+	}
+
+	.pp {
+		margin: 0;
+	}
+
+	.pp img {
+		height: 91px;
+		width: 91px;
+		margin: 0;
+	}
+
+	.infos {
+		display: none;
+	}
+
+	.responsive_name {
+		display: flex;
+		flex-direction: column;
+		margin-left: 20px;
+		justify-content: center;
+	}
+
+	.responsive_name h1 {
+		font-weight: 300;
+		font-size: 24px;
+	}
+
+	.responsive_name .btn {
+		padding: 5px 68px;
+	}
+
+	.responsive_stats {
+		display: flex;
+		justify-content: space-evenly;
+		border-top: 1px solid #dbdbdb;
+		font-size: 14px;
+		padding: 12px 0;
+	}
+
+	.responsive_stats li {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		font-weight: 300;
+	}
+
+	.responsive_métier {
+		display: flex;
+		font-weight: 200;
+		font-size: 14px;
+		padding-left: 10px;
+		margin-top: 10px;
+	}
+
+	.responsive_bio {
+		display: flex;
+		padding-left: 10px;
+		font-size: 14px;
+	}
+
+	.suggestions {
+		margin-top: 25px;
+		margin-bottom: 20px;
+	}
+
+	.suggestions img {
+		height: 56px;
+		width: 56px;
+	}
+
+	.chats li {
+		justify-content: center;
+		align-items: center;
+		margin-left: 5px;
+		margin-right: 10px;
+		font-size: 12px;
+	}
+
+	.container_onglet {
+		justify-content: space-evenly;
+	}
+
+	.onglets {
+		justify-content: space-evenly;
+		font-size: 24px;
+	}
+
+	.active {
+		border-top: 1px solid #0095f6;
+		color: #0095f6;
+	}
+
+	.cat {
+		margin: 0 3px 3px 0;
+	}
+
+	.dog {
+		margin: 0 3px 3px 0;
+	}
+
+	.onglets span {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 626px) {
+	input {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 531px) {
+	.cat {
+		width: 27%;
+	}
+
+	.dog {
+		width: 27%;
+	}
+}
