@@ -130,7 +130,7 @@ input:focus {
 }
 
 .cat {
-	width: 293px;
+	width: calc(100% / 3.3);
 	height: 293px;
 	overflow: hidden;
 	flex-shrink: 0;
@@ -138,7 +138,7 @@ input:focus {
 }
 
 .dog {
-	width: 293px;
+	width: calc(100% / 3.3);
 	height: 293px;
 	overflow: hidden;
 	flex-shrink: 0;
@@ -311,14 +311,14 @@ header {
 
 @media screen and (max-width: 989px) {
 	.cat {
-		width: 28%;
-		height: auto;
+		width: 28vw;
+		height: 28vw;
 		margin: 6px 14px 15px 14px;
 	}
 
 	.dog {
-		width: 28%;
-		height: auto;
+		width: 28vw;
+		height: 28vw;
 		margin: 6px 14px 15px 14px;
 	}
 }
@@ -436,15 +436,5 @@ header {
 @media screen and (max-width: 626px) {
 	input {
 		display: none;
-	}
-}
-
-@media screen and (max-width: 531px) {
-	.cat {
-		width: 27%;
-	}
-
-	.dog {
-		width: 27%;
 	}
 }
